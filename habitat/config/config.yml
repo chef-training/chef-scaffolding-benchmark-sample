@@ -1,0 +1,16 @@
+# Use this file to templatize your application's native configuration files.
+# See the docs at https://www.habitat.sh/docs/create-packages-configure/.
+# You can safely delete this file if you don't need it.
+
+# This is an example of how to customize a control. For example, set "remediate" to true to enable
+---
+provider: Chef
+benchmark: CIS Sample Linux
+provider_version: v.1.0.0
+controls:
+- id: 1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled
+  scan:
+    run: true
+  remediate:
+    run: false
+  justification: "This is an example of a justification"

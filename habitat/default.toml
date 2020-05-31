@@ -1,0 +1,10 @@
+# Use this file to templatize your application's native configuration files.
+# See the docs at https://www.habitat.sh/docs/create-packages-configure/.
+# You can safely delete this file if you don't need it.
+
+# The chef license can be set to "acceot-no-persist" if you accept the Chef MLSA
+# https://www.chef.io/online-master-agreement/
+# The package can then be deployed to any system for testing, manually or using Habitat Builder
+
+[chef_license]
+acceptance = ""
